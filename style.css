@@ -814,6 +814,7 @@ nav a:hover {
   flex: 1;
   justify-content: space-between;
   overflow: hidden;
+  z-index: 700;
 }
 
 .img:hover .img1 {
@@ -892,6 +893,20 @@ nav a:hover {
   transform: scale(1.5);
 }
 
+p {
+  color: white;
+  font-family: "Patrick Hand SC", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  margin-left: 10em;
+  animation: fadeout ease-out 250ms;
+  opacity: 0;
+}
+
+#contacts:hover p{
+  animation: fadein ease-in 250ms;
+  opacity: 1;
+}
 /* Mobile View */
 
 @media screen and (max-width: 768px) {
@@ -931,5 +946,29 @@ nav a:hover {
     margin-right: 2em;
     animation: fadeout ease-out 250ms;
     opacity: 0;
+  }
+
+  #container {
+    all: unset;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projects"
+    "contacts";
+  }
+
+  #projects {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    grid-area: projects;
+  }
+
+  #contacts {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    grid-area: contacts;
   }
 }
