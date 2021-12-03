@@ -903,7 +903,7 @@ p {
   opacity: 0;
 }
 
-#contacts:hover p{
+#contacts:hover p {
   animation: fadein ease-in 250ms;
   opacity: 1;
 }
@@ -953,9 +953,9 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "projects"
-    "contacts";
+    grid-template-areas:
+      "projects"
+      "contacts";
   }
 
   #projects {
@@ -970,5 +970,48 @@ p {
     background-size: cover;
     background-position: center;
     grid-area: contacts;
+  }
+
+  #projects:hover {
+    width: 100%;
+  }
+
+  #contacts:hover {
+    width: 100%;
+  }
+
+  .tag1 {
+    font-size: 40px;
+    margin-left: 5em;
+  }
+
+  .tag2 {
+    font-size: 40px;
+    margin-left: 5em;
+  }
+
+  .tag3 {
+    font-size: 40px;
+    margin-left: 5em;
+  }
+
+  .img1 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .img2 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .img3 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .img4 {
+    width: 200px;
+    height: 100px;
   }
 }
